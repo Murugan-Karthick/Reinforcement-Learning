@@ -39,7 +39,6 @@ action=sample_next_action(available_act)
 
 
 # Function updates the Q matrix according to the path selected and the Q
-
 def update(current_state, action, gamma):
     max_index = np.where(Q[action,]==np.max(Q[action,]))[1]
     if max_index.shape[0]>1:
@@ -56,7 +55,7 @@ update(initial_state,action,gamma)
 
 
 
-# ****************Training or Learning Q Matrix******************
+# ****************Training (or) Learning Q Matrix******************
 
 
 # Train over 10 000 iterations  (re iterate the process above)

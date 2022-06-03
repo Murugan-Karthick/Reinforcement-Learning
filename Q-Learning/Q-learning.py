@@ -56,8 +56,6 @@ update(initial_state,action,gamma)
 
 
 # ****************Training (or) Learning Q Matrix******************
-
-
 # Train over 10 000 iterations  (re iterate the process above)
 for i in range(0,10000):
     current_state = np.random.randint(0,int(Q.shape[0]))
